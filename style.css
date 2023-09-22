@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+}
+
+/* header */
+.heads {
+    /* border: 2px solid red; */
+    padding: 15px 10%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+
+.logo h1 {
+    color: #ff063c;
+    cursor: pointer;
+}
+
+.menulist {
+    display: flex;
+    gap: 1rem;
+}
+
+.menulist li {
+    list-style: none;
+    font-size: 1.1rem;
+    transition: 0.40s all;
+}
+
+.menulist li:hover {
+    color: #ff063c;
+    cursor: pointer;
+    transform: translateY(-7px);
+}
+/* toggle button */
+.toggle-btn{
+    font-size: 25px;
+    display: none;
+}
+.toggle-btn:hover{
+    cursor: pointer;
+}
+.toggle{
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+    
+}
+.togglelist{
+    position: fixed;
+    top: 4rem;
+    background-color: #ff063c;
+    width: 100%;
+    text-align: center;
+    left: -100%;
+    transition: 0.3s;
+}
+.togglelist.active{
+    left: 0;
+}
+
+/* first part */
+.first {
+    /* border: 2px solid red; */
+    padding: 20px 10%;
+    margin: 5rem auto;
+}
+
+.pic img {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+
+}
+
+.info h1 {
+    color: #ff063c;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.info p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.info #p2 {
+    margin-top: 1rem;
+}
+
+.info .btn {
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid white;
+
+}
+
+.btn:hover {
+    background-color: #ff063c;
+    color: white;
+    cursor: pointer;
+}
+
+.info h4 span {
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.info h1 {
+    margin-top: 1rem;
+}
+
+/* projects */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1rem;
+}
+
+.box {
+    border: 1px solid red;
+    padding: 1rem;
+    text-align: center;
+
+}
+.box i{
+    font-size: 1.8rem;
+}
+.box:nth-child(even){
+    border: 1px solid blue;
+}
+.box .ri-css3-line{
+    color: blue;
+}
+.box .bxl-jquery{
+    color: blue;
+}
+.box .bxl-sass{
+    color: blue;
+}
+
+.box .ri-html5-line{
+    color: #ff063c;
+}
+.box .ri-javascript-line{
+    color: #ff063c;
+}
+.box .ri-bootstrap-line{
+    color: #ff063c;
+}
+.box .ri-reactjs-line{
+    color: #ff063c;
+}
+
+.mid{
+    text-align: center;
+}
+.mid span{
+    color: black;
+}
+
+.contact__me{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+.contact__me i{
+    font-size: 25px;
+}
+.contact__me .ri-map-pin-2-fill{
+    color: #a3e635;
+}
+.contact__me .ri-smartphone-fill{
+    color: #3b82f6;
+}
+.contact__me .ri-mail-send-fill{
+    color: #ff063c;
+    
+}
+.contact__me h4{
+    margin-top: 1rem;
+}
+.contact__me h4{
+    margin-bottom: 3rem;
+}
+
+.footer{
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #ff063c;
+}
+
+/* Responsive at tablet devices */
+@media screen and (max-width: 768px) {
+    nav{
+        display: none;
+    }
+    .toggle-btn{
+        display: block;
+    }
+}
